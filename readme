@@ -1,1 +1,158 @@
+🚀 Django Task Management API
 
+A full-stack Django application built as a demo task for the Full Stack Data Engineer role.
+This project demonstrates REST API development, database integration, and a simple data visualization dashboard.
+
+📌 Project Overview
+
+This application allows users to:
+
+Create, update, delete, and view tasks
+
+Store data in PostgreSQL
+
+View task analytics using a dashboard
+
+Access REST APIs built with Django REST Framework
+
+🛠 Tech Stack
+
+Backend: Django, Django REST Framework
+
+Database: PostgreSQL
+
+Frontend: HTML, Chart.js
+
+Version Control: Git & GitHub
+
+Python Version: 3.10
+
+📂 Project Structure
+django-task-dashboard/
+│
+├── core/                  # Django project settings
+├── tasks/                 # Task app (models, views, serializers)
+├── templates/             # Dashboard UI
+│   └── dashboard.html
+├── manage.py
+├── requirements.txt
+└── README.md
+
+⚙️ Features
+✅ REST APIs
+
+Create Task
+
+View Tasks
+
+Update Task
+
+Delete Task
+
+✅ Dashboard
+
+Displays number of:
+
+Completed tasks
+
+Pending tasks
+
+Built using Chart.js
+
+✅ Admin Panel
+
+Manage tasks via Django Admin
+
+Secure and easy data handling
+
+📡 API Endpoints
+Method	Endpoint	Description
+GET	/api/tasks/	Fetch all tasks
+POST	/api/tasks/	Create a new task
+PUT	/api/tasks/{id}/	Update a task
+DELETE	/api/tasks/{id}/	Delete a task
+GET	/dashboard/	Dashboard view
+🗄️ Database
+
+PostgreSQL is used as the database
+
+Easily configurable via settings.py
+
+Example configuration:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'demo_db',
+        'USER': 'your_username',
+        'PASSWORD': 'your_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+▶️ How to Run the Project
+1️⃣ Clone Repository
+git clone https://github.com/Padmakar4141/django-task-dashboard.git
+cd django-task-dashboard
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Run Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+4️⃣ Create Superuser
+python manage.py createsuperuser
+
+5️⃣ Run Server
+python manage.py runserver
+
+🌐 Access the Application
+Feature	URL
+Admin Panel	http://127.0.0.1:8000/admin
+
+Task API	http://127.0.0.1:8000/api/tasks/
+
+Dashboard	http://127.0.0.1:8000/dashboard/
+📊 Dashboard Preview
+
+Shows number of completed vs pending tasks
+
+Uses Chart.js for visualization
+
+Data fetched dynamically from database
+
+🔮 Future Improvements
+
+Authentication & role-based access
+
+Pagination & filtering
+
+Docker support
+
+Deployment on AWS / Render
+
+React frontend
+
+👨‍💻 Author
+
+Padmakar Pimpale
+GitHub: https://github.com/Padmakar4141
+
+✅ Notes
+
+This project is created as part of a technical assessment.
+
+Focus is on clean backend logic, API design, and data handling.
+
+Code is modular and easy to extend.
+
+If you want, I can next:
+✅ Write the submission email
+✅ Prepare interview explanation
+✅ Help you explain this project confidently
+✅ Review your GitHub like an interviewer
+
+Just tell me 👍
